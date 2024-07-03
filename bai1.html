@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra số nguyên trong mảng</title>
+</head>
+<body>
+    <script>
+        // Khai báo mảng với các phần tử bất kỳ
+        var arr = [1, 2.5, 'hello', 3, 4.8, 5, 'world'];
+
+        // Khởi tạo một danh sách để lưu trữ các số nguyên
+        var songuyen = [];
+
+        // Duyệt qua các phần tử của mảng
+        for (var i = 0; i < arr.length; i++) {
+            // Kiểm tra xem phần tử có phải là số nguyên không
+            if (Number.isInteger(arr[i])) {
+                songuyen.push(arr[i]);
+            }
+        }
+
+        // Kiểm tra và in ra các số nguyên hoặc thông báo nếu không có số nguyên nào
+        if (songuyen.length > 0) {
+            console.log('Các số nguyên trong mảng: ' + songuyen.join(', '));
+        } else {
+            console.log('Trong mảng không tồn tại số nguyên');
+        }
+    </script>
+</body>
+</html>

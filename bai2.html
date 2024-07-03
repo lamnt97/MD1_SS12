@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var username = ["A","B","C","D","E","F","G"]
+        var keyword = prompt("Nhập vào tên bạn muốn tìm");
+
+        var check = false;
+        for (var i = 0; i < username.length; i++){
+            if(username[i] === keyword){
+                check = true;
+                break;
+            }
+        }
+        if(check){
+            document.write(`CÓ tồn tại ${keyword} trong danh sách!`)
+        } else{
+            document.write(`KHÔNG tồn tại ${keyword} trong danh sách!`)
+        }
+
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n = Number(prompt("Nhập vào số nguyên bất kỳ không âm"))
+        while( !Number.isInteger(n) || n < 0){
+            n = Number(prompt("Số nhập vào không đúng,vui lòng nhập lại"));  
+        }
+        var array = []
+        for (var i = 1; i < n; i++){
+            if (i % 3 == 0 && i % 5 == 0){
+                array.push(i);
+            }
+        }
+        document.write(`Các số chia hết cho 3 & 5 là : ${array}`)
+    </script>
+    
+</body>
+</html>

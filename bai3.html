@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var array = [1,2,3,4,3,2,4,5,4,5,4,4,4];
+        var keyword = Number(prompt("Nhập vào số nguyên bất kỳ"));
+        var count = 0
+
+        //Tìm thấy phần tử giống Keyword thì cộng thêm số lần
+        for ( var i = 0; i < array.length; i++){
+            if (array[i]=== keyword)
+            count++;
+        }
+        document.write(`Phần tử ${keyword} xuất hiện ${count} lần!`)
+    </script>
+    
+</body>
+</html>
